@@ -92,9 +92,9 @@ export type Conversation = {
 
 /** Matches shown in the "Новые совпадения" strip */
 export const newMatches = [
-  { id: "n1", name: "Василий", avatar: "/profiles/match-1.jpg", isNew: true },
+  { id: "n1", name: "Маэстро", avatar: "/profiles/maestro.jpg", isNew: true },
   { id: "n2", name: "Макс", avatar: "/profiles/match-4.jpg", isNew: true },
-  { id: "n3", name: "Лёлик", avatar: "/profiles/match-5.jpg" },
+  { id: "n3", name: "Игорь", avatar: "/profiles/match-5.jpg" },
 ];
 
 export const conversations: Conversation[] = [
@@ -108,7 +108,7 @@ export const conversations: Conversation[] = [
     status: "В сети · отвечает быстро",
     verified: true,
     city: "Артемьевск",
-    distance: "8 км",
+    distance: "4 км",
     compatibility: 94,
     about:
       "Состоявшийся мужчина старой школы. Ценю красоту, вкус и уважение к статусу. Люблю, когда женщина умеет держать себя.",
@@ -127,73 +127,43 @@ export const conversations: Conversation[] = [
     ],
     matchedLabel: "Вы совпали сегодня",
     preview: {
-      lastMessage: "Добрый вечер, Татьяна.",
+      lastMessage: "Вы меня очаровали. Позвольте вас пригласить в ваш любимый «Купидон» через час",
       time: "только что",
       unread: 1,
     },
-    suggestion: "В восемь. И только лучшее вино.",
+    suggestion: "Почему именно «Купидон»?",
     script: [
       {
         kind: "text",
         from: "them",
-        text: "Добрый вечер, Татьяна. Редко вижу здесь женщину с таким лицом и такой подачей.",
+        text: "Вы меня очаровали. Позвольте вас пригласить в ваш любимый «Купидон» через час",
       },
       {
         kind: "text",
         from: "me",
-        text: "Добрый. Я тоже редко вижу здесь мужчин, умеющих начинать разговор не банально.",
-      },
-      {
-        kind: "text",
-        from: "them",
-        text: "Банальности оставим мальчикам. Я предпочитаю личные встречи.",
-      },
-      {
-        kind: "text",
-        from: "me",
-        text: "Тогда не разочаруйте. Я люблю красивые места и плохое вино не пью.",
-      },
-      {
-        kind: "text",
-        from: "them",
-        text: "Плохого рядом со мной не бывает. Закажете всё, что захотите.",
-      },
-      {
-        kind: "text",
-        from: "me",
-        text: "Осторожно. Я могу захотеть очень многое.",
-      },
-      {
-        kind: "text",
-        from: "them",
-        text: "Люблю женщин с аппетитом. Встретимся в «Купидоне» в восемь?",
-      },
-      {
-        kind: "text",
-        from: "me",
-        text: "В восемь. И только лучшее вино.",
+        text: "Почему именно «Купидон»?",
       },
     ],
   },
 
   {
     id: "c2",
-    name: "Рыжов",
-    nameDative: "Рыжову",
-    age: 45,
-    avatar: "/profiles/ryzhov-main.jpg",
-    photos: ["/profiles/ryzhov-main.jpg", "/profiles/ryzhov-2.jpg"],
+    name: "Алексей",
+    nameDative: "Алексею",
+    age: 38,
+    avatar: "/profiles/aleksey-main.jpg",
+    photos: ["/profiles/aleksey-main.jpg"],
     online: false,
     status: "Был в сети 20 минут назад",
     verified: false,
     city: "Артемьевск",
-    distance: "6 км",
+    distance: "4,5 км",
     compatibility: 71,
     about: "Без цирка и лишнего пафоса. Люблю честность, спокойные разговоры и когда человек не играет чужую роль.",
     facts: [
       { icon: Briefcase, label: "Следователь" },
       { icon: GraduationCap, label: "Юридическое" },
-      { icon: MapPin, label: "Артемьевск · 6 км от вас" },
+      { icon: MapPin, label: "Артемьевск · 4,5 км от вас" },
       { icon: Ruler, label: "179 см" },
       { icon: Wine, label: "Иногда" },
     ],
@@ -204,61 +174,24 @@ export const conversations: Conversation[] = [
     ],
     matchedLabel: "Вы совпали 3 дня назад",
     preview: {
-      lastMessage: "Цветы, между прочим, были хорошие.",
-      time: "вчера",
+      lastMessage: "Переписка не подтверждена сценарием",
+      time: "—",
     },
-    suggestion: "Не сердитесь. Цветы и правда были хорошие.",
+    suggestion: "Нужен фрагмент сценария с его сообщениями",
     script: [
-      {
-        kind: "text",
-        from: "them",
-        text: "Здравствуйте, Татьяна. Судя по фото, вы из тех женщин, с которыми скучно не бывает.",
-      },
-      {
-        kind: "text",
-        from: "me",
-        text: "Смотря кто рядом. Некоторые и праздник умудряются испортить.",
-      },
-      {
-        kind: "text",
-        from: "them",
-        text: "Я постараюсь не испортить. Могу пригласить на кофе. Без глупостей.",
-      },
-      {
-        kind: "text",
-        from: "me",
-        text: "Кофе — это допрос или ухаживание?",
-      },
-      {
-        kind: "text",
-        from: "them",
-        text: "Пока ухаживание. Но вопросы задавать люблю.",
-      },
-      {
-        kind: "text",
-        from: "me",
-        text: "Тогда я приду в хорошем настроении и с плохими ответами.",
-      },
-      {
-        kind: "text",
-        from: "them",
-        text: "Договорились. Только не исчезайте после букета.",
-      },
-      {
-        kind: "text",
-        from: "me",
-        text: "Не сердитесь. Цветы и правда были хорошие.",
-      },
+      // TODO:
+      // В приложенном фрагменте сценария нет пригодимой чат-переписки Рыжова,
+      // которую можно вставить сюда прямыми цитатами без додумывания.
     ],
   },
 
   {
     id: "c3",
-    name: "Лёлик",
-    nameDative: "Лёлику",
-    age: 35,
+    name: "Игорь",
+    nameDative: "Игорю",
+    age: 36,
     avatar: "/profiles/lelik-main.jpg",
-    photos: ["/profiles/lelik-main.jpg", "/profiles/lelik-2.jpg", "/profiles/lelik-3.jpg"],
+    photos: ["/profiles/lelik-main.jpg"],
     online: true,
     status: "В сети",
     verified: true,
@@ -269,8 +202,8 @@ export const conversations: Conversation[] = [
     facts: [
       { icon: Briefcase, label: "Предприниматель" },
       { icon: GraduationCap, label: "Высшее" },
-      { icon: MapPin, label: "Артемьевск · 4 км от вас" },
-      { icon: Ruler, label: "181 см" },
+      { icon: MapPin, label: "Артемьевск · 2 км от вас" },
+      { icon: Ruler, label: "183 см" },
       { icon: Wine, label: "Шампанское по поводу и без" },
     ],
     interests: [
@@ -281,51 +214,14 @@ export const conversations: Conversation[] = [
     ],
     matchedLabel: "Вы совпали неделю назад",
     preview: {
-      lastMessage: "С тобой хочется говорить до утра.",
-      time: "2 часа назад",
+      lastMessage: "Переписка не подтверждена сценарием",
+      time: "—",
     },
-    suggestion: "До утра — дорого. Начнём с ужина.",
+    suggestion: "Нужен фрагмент сценария с его сообщениями",
     script: [
-      {
-        kind: "text",
-        from: "them",
-        text: "Ты из тех женщин, которым невозможно не написать.",
-      },
-      {
-        kind: "text",
-        from: "me",
-        text: "А ты из тех мужчин, которые это пишут всем подряд?",
-      },
-      {
-        kind: "text",
-        from: "them",
-        text: "Нет. Только тем, кто действительно цепляет.",
-      },
-      {
-        kind: "text",
-        from: "me",
-        text: "Хороший ответ. Почти убедил.",
-      },
-      {
-        kind: "text",
-        from: "them",
-        text: "Давай я доубеждаю тебя ужином. Ты любишь красивые места?",
-      },
-      {
-        kind: "text",
-        from: "me",
-        text: "Люблю. Ещё больше люблю мужчин, которые умеют за них платить.",
-      },
-      {
-        kind: "text",
-        from: "them",
-        text: "С этим проблем не будет. С тобой хочется говорить до утра.",
-      },
-      {
-        kind: "text",
-        from: "me",
-        text: "До утра — дорого. Начнём с ужина.",
-      },
+      // TODO:
+      // В приложенном фрагменте сценария нет пригодимой чат-переписки Лёлика
+      // прямыми цитатами. Текущие реплики нужно не выдумывать, а брать из сцен.
     ],
   },
 
@@ -335,7 +231,7 @@ export const conversations: Conversation[] = [
     nameDative: "Максу",
     age: 28,
     avatar: "/profiles/max.webp",
-    photos: ["/profiles/max.webp", "/profiles/max-2.jpg"],
+    photos: ["/profiles/max.webp"],
     online: true,
     status: "В сети",
     verified: true,
@@ -358,50 +254,25 @@ export const conversations: Conversation[] = [
     ],
     matchedLabel: "Вы совпали недавно",
     preview: {
-      lastMessage: "Заглядывайте в «Купидон».",
+      lastMessage: "ПРИГЛАШЕНИЕ ОТ ТАКОЙ КРАСИВОЙ ДЕВУШКИ - БОЛЬШАЯ ЧЕСТЬ",
       time: "сегодня",
     },
-    suggestion: "Если там лучший столик — могу подумать.",
+    suggestion: "Я РАБОТАЮ В БИБЛИОТЕКЕ. СЕГОДНЯ У НАС ТЕАТРАЛИЗОВАННАЯ ПОСТАНОВКА. МОЖЕТ БЫТЬ ХОЧЕШЬ ПРИЙТИ?",
     script: [
       {
         kind: "text",
-        from: "them",
-        text: "Привет. У тебя профиль такой, будто ты умеешь испортить любой мужчине спокойную жизнь.",
+        from: "me",
+        text: "МАКСИМ, ПРИВЕТ!",
       },
       {
         kind: "text",
         from: "me",
-        text: "Только если мужчина сам напрашивается.",
+        text: "Я РАБОТАЮ В БИБЛИОТЕКЕ. СЕГОДНЯ У НАС ТЕАТРАЛИЗОВАННАЯ ПОСТАНОВКА. МОЖЕТ БЫТЬ ХОЧЕШЬ ПРИЙТИ?",
       },
       {
         kind: "text",
         from: "them",
-        text: "Рискну. Я Максим. У меня ресторан, хороший вкус и свободный вечер.",
-      },
-      {
-        kind: "text",
-        from: "me",
-        text: "Скромность явно не твоё главное достоинство.",
-      },
-      {
-        kind: "text",
-        from: "them",
-        text: "Зато честность — вполне. Заглядывай в «Купидон», проверишь всё сама.",
-      },
-      {
-        kind: "text",
-        from: "me",
-        text: "А если мне не понравится?",
-      },
-      {
-        kind: "text",
-        from: "them",
-        text: "Тогда хотя бы скажешь это красиво. Но обычно мне дают второй шанс.",
-      },
-      {
-        kind: "text",
-        from: "me",
-        text: "Если там лучший столик — могу подумать.",
+        text: "ПРИГЛАШЕНИЕ ОТ ТАКОЙ КРАСИВОЙ ДЕВУШКИ - БОЛЬШАЯ ЧЕСТЬ",
       },
     ],
   },

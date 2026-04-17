@@ -1,13 +1,13 @@
 import {
-	ArrowRight,
-	Flame,
-	Heart,
-	Lock,
-	MessageCircle,
-	Shield,
-	Sparkles,
-	Star,
-	Zap,
+  ArrowRight,
+  Flame,
+  Heart,
+  Lock,
+  MessageCircle,
+  Shield,
+  Sparkles,
+  Star,
+  Zap,
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -155,9 +155,9 @@ export default function LandingPage() {
             <Image
               src="/amur-logo.png"
               alt="Амур"
-              width={110}
+              width={200}
               height={36}
-              className="h-8 w-auto"
+              className="h-30 w-auto"
               priority
             />
           </Link>
@@ -171,8 +171,8 @@ export default function LandingPage() {
             <a href="#testimonials" className="text-md text-[#2a1418]/60 transition-colors hover:text-[#2a1418]">
               Отзывы
             </a>
-            <a href="#pricing" className="text-md text-[#2a1418]/60 transition-colors hover:text-[#2a1418]">
-              Цены
+            <a href="#pricing" className="text-md bg-linear-to-r from-[oklch(0.56_0.2_8)] via-[oklch(0.62_0.22_12)] to-[oklch(0.7_0.18_40)] bg-clip-text text-transparent font-bold transition-colors hover:text-[#2a1418]">
+              Амур+
             </a>
           </nav>
           <div className="flex items-center gap-2">
@@ -310,8 +310,8 @@ export default function LandingPage() {
               Возможности
             </div>
             <h2 className="text-4xl font-medium tracking-tight text-balance sm:text-5xl">
-              Всё для того, чтобы{" "}
-              <span className="font-serif italic font-normal text-[oklch(0.56_0.2_8)]">найти своего</span>
+              Всё для того, чтобы найти{" "}
+              <span className="font-serif italic text-[1.35em] font-normal text-[oklch(0.56_0.2_8)]">свою вторую половинку</span>
             </h2>
             <p className="mt-4 text-lg text-[#2a1418]/60 text-pretty">
               Технологии, которые помогают встретить того самого человека.
@@ -345,7 +345,7 @@ export default function LandingPage() {
             </div>
             <h2 className="text-4xl font-medium tracking-tight text-balance sm:text-5xl">
               Их истории начались{" "}
-              <span className="font-serif italic font-normal text-[oklch(0.56_0.2_8)]">здесь</span>
+              <span className="font-serif italic text-[1.35em] underline font-normal text-[oklch(0.56_0.2_8)]">здесь</span>
             </h2>
             <p className="mt-4 text-lg text-[#2a1418]/60 text-pretty">
               Каждый день сотни людей находят свою любовь благодаря Амуру.
@@ -393,7 +393,7 @@ export default function LandingPage() {
             </div>
             <h2 className="text-4xl font-medium tracking-tight text-balance sm:text-5xl">
               Говорят{" "}
-              <span className="font-serif italic font-normal text-[oklch(0.56_0.2_8)]">наши люди</span>
+              <span className="font-serif italic text-[1.35em] font-normal text-[oklch(0.56_0.2_8)]">наши люди</span>
             </h2>
           </div>
 
@@ -454,7 +454,7 @@ export default function LandingPage() {
             <div className="relative">
               <h2 className="mb-5 text-4xl font-medium tracking-tight text-balance sm:text-5xl lg:text-6xl">
                 Твоя история любви{" "}
-                <span className="font-serif italic font-normal text-[oklch(0.56_0.2_8)]">ждёт</span>
+                <span className="font-serif italic text-[1.425em] font-normal text-[oklch(0.56_0.2_8)]">ждёт</span>
               </h2>
               <p className="mx-auto mb-10 max-w-xl text-lg text-[#2a1418]/70 text-pretty">
                 Присоединяйся к тысячам людей, которые уже нашли своё счастье.

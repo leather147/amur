@@ -142,22 +142,24 @@ export function LeftNav() {
           )}
         </button>
 
-        <div
+        <Link
+          href="/me"
+          aria-label="Открыть мой профиль"
           className={cn(
-            "cursor-pointer flex items-center",
+            "cursor-pointer flex items-center transition-colors",
             expanded ? "gap-3 rounded-full px-1 py-1 hover:bg-sidebar-accent/60" : "flex-col",
           )}
         >
           <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full ring-2 ring-background">
-            <Image src="/profiles/user-me.jpg" alt="Ваш профиль" fill className="object-cover" sizes="40px" />
+            <Image src="/profiles/user-me.png" alt="Ваш профиль" fill className="object-cover" sizes="40px" />
           </div>
           {expanded && (
             <div className="flex min-w-0 flex-col leading-tight">
-              <span className="truncate text-sm font-semibold text-foreground">Анастасия</span>
+              <span className="truncate text-sm font-semibold text-foreground">Маша</span>
               <span className="truncate text-xs text-muted-foreground">Мой профиль</span>
             </div>
           )}
-        </div>
+        </Link>
       </div>
     </aside>
   )
